@@ -1,6 +1,6 @@
 using System;
 
-namespace ASP.NET.Models
+namespace Testing.Models
 {
     public class ErrorViewModel
     {
