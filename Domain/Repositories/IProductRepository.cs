@@ -1,10 +1,10 @@
-﻿using ASP.NET.Models;
+﻿using Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ASP.NET
+namespace Domain.Repositories
 {
     public interface IProductRepository
     {
@@ -13,7 +13,7 @@ namespace ASP.NET
         public Product GetProduct(int id);
         public void UpdateProduct(Product product);
         public void InsertProduct(Product productToInsert);
-        public IEnumerable<Category> GetCategories();
+        
         public Product AssignCategory();
         public void DeleteProduct(Product product);
 

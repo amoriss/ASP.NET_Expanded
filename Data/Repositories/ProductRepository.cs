@@ -1,12 +1,13 @@
-﻿using ASP.NET.Models;
-using Dapper;
+﻿using Dapper;
+using Domain.Entities;
+using Domain.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ASP.NET
+namespace Data.Repositories
 {
     public class ProductRepository: IProductRepository
     {
@@ -62,8 +63,8 @@ namespace ASP.NET
             _conn.Execute("DELETE FROM Products WHERE ProductID = @id;",
                                        new { id = product.ProductID });
         }
+ 
 
-
-
+       
     }
 }

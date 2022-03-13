@@ -1,4 +1,6 @@
 ﻿using ASP.NET.Models;
+using Domain.Entities;
+using Domain.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
